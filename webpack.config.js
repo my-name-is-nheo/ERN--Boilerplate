@@ -8,18 +8,16 @@ module.exports = {
     path: DIST_DIR,
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
-        // include: SRC_DIR,
         exclude: /node_modules/,
         loader: "babel-loader",
-        query: {
+        options: {
           presets: ["@babel/preset-react"],
         },
       },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
     ],
   },
-  //,{   exclude: [/\.js$/, /\.html$/, /\.json$/, /\.ejs$/]}
 };

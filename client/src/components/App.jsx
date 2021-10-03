@@ -1,13 +1,12 @@
 import React from "react";
+import Register from "./register.jsx";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Hello</h1>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <Register />
+    </div>
+  );
+};
 
 export default App;
